@@ -1,0 +1,40 @@
+@use "styles/Mixins"
+@import "styles/Colors"
+
+.button
+  position: relative
+  transition: .1s transform ease
+  cursor: pointer
+
+  &:active
+    transform: scale(1.025)
+
+  &__content
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: .625rem
+    border-radius: 1.25rem
+    padding: 1rem 2rem
+    font-weight: 500
+
+  &--full-width
+    width: 100%
+
+  &--primary
+    .button__content
+      @include Mixins.shadow("primary")
+      background-color: $BlueRibbon
+      color: $White
+
+    &::before
+      @include Mixins.shadow("primary")
+      content: ''
+      position: absolute
+      z-index: -1
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: 64%
+      height: 1rem
+      background-color: $White

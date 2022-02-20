@@ -1,0 +1,61 @@
+@use "styles/Mixins"
+@import "styles/Colors"
+
+.portfolio
+  @include Mixins.section
+
+  &__container
+    display: flex
+    flex-direction: column
+    gap: 1.5rem
+
+  &__categories
+    select
+      appearance: none
+      -webkit-appearance: none
+      -moz-appearance: none
+      outline: none
+      border: none
+      border-radius: 10rem
+      padding: 1rem 1.5rem
+      width: 100%
+      background-color: $BlackHaze
+      font-size: .938rem
+      color: $RegentGray
+
+      &::ms-expand
+        display: none
+
+  &__projects
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr))
+    gap: 1.25rem
+
+  &__no-projects
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    min-height: 5rem
+    font-size: .938rem
+    color: $RegentGray
+
+  &__project
+    .image
+      overflow: hidden
+      margin-bottom: 1rem
+      border-radius: 1rem
+
+    .title
+      margin-bottom: .375rem
+      font-weight: 700
+
+    .categories
+      display: flex
+      gap: .5rem
+      font-size: .875rem
+      color: $RegentGray
+
+      span
+        &:hover
+          color: $BlueRibbon

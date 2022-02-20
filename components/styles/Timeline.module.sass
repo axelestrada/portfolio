@@ -1,0 +1,51 @@
+@import "styles/Colors"
+
+.timeline
+  display: flex
+  flex-direction: column
+
+  &__item
+    position: relative
+    gap: .75rem
+    padding-left: 1.875rem
+
+    &::before
+      content: ''
+      position: absolute
+      z-index: 10
+      top: 0
+      left: 0
+      border: .125rem solid rgba($White, .5)
+      border-radius: 1rem
+      width: .875rem
+      height: .875rem
+      background-color: $BlueRibbon
+
+    &:not(:last-child)
+      padding-bottom: 2rem
+
+      &::after
+        content: ''
+        position: absolute
+        z-index: 5
+        top: 0
+        left: .4375rem
+        transform: translateX(-50%)
+        width: .063rem
+        height: 100%
+        background-color: $LightAthensGray
+
+    &,
+    .header
+      display: flex
+      flex-direction: column
+
+    .header
+      gap: .5rem
+
+      .title
+        font-weight: 700
+
+      .date
+        font-size: .875rem
+        color: $RegentGray
