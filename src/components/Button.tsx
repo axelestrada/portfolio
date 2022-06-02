@@ -7,7 +7,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 interface Props {
   title: string;
   type?: "primary";
-  buttonType?: string;
+  buttonType?: "button" | "reset" | "submit" | undefined;
   icon?: IconProp;
   image?: string;
   fullWidth?: Boolean;
