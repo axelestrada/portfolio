@@ -1,0 +1,101 @@
+@use "/src/styles/Mixins"
+
+.profile
+  @include Mixins.card
+  position: relative
+  display: flex
+  align-items: center
+  flex-direction: column
+  padding: 7.125rem 1rem 1rem 1rem
+
+  .picture
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%, -50%)
+    overflow: hidden
+    border-radius: 2rem
+    width: 11.25rem
+    height: 11.25rem
+
+  .information
+    display: flex
+    align-items: center
+    flex-direction: column
+    gap: 1rem
+    width: 100%
+
+    .name
+      font-size: 1.813rem
+      font-family: 'Merriweather', serif
+      font-weight: 400
+
+      b
+        font-weight: 700
+
+    .occupation
+      @include Mixins.badge
+
+    .social
+      &-media
+        display: flex
+        align-items: center
+        gap: 0.813rem
+
+      &-network
+        font-size: .938rem
+
+        .icon
+          color: $Fiord
+          transition: color .2s ease-in-out
+
+          &:hover
+            @include  Mixins.shadow("primary-sm")
+            color: $BlueRibbon
+
+    .details
+      display: none
+      flex-direction: column
+      gap: .5rem
+
+      .item
+        display: flex
+        align-items: center
+        gap: .625rem
+
+        .icon
+          width: 1.125rem
+
+        .text,
+        .link
+          font-size: .935rem
+          color: $Fiord
+
+        .link
+          transition: color .2s ease-in-out
+
+          &:hover
+            @include  Mixins.shadow("primary-sm")
+            color: $BlueRibbon
+
+    .button
+      max-width: 23.5rem
+
+  @include Mixins.desktop
+    justify-content: center
+    border-radius: 2rem
+    filter: none
+    padding: 1.5rem
+    gap: 1.5rem
+    background-color: $BlackHaze
+
+    .picture
+      position: static
+      transform: none
+
+    .information
+      .details
+        display: flex
+
+      .button .content
+        padding: 1rem

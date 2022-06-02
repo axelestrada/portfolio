@@ -2,8 +2,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
-import "../styles/reset.sass";
-import "../styles/global.sass";
+import "/src/styles/main.sass";
 
 import type { AppProps } from "next/app";
 

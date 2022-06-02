@@ -1,0 +1,41 @@
+@use "/src/styles/Mixins"
+
+.contact
+  .map
+    filter: grayscale(1)
+
+    iframe
+      border-radius: .5rem
+      min-height: 12rem
+      width: 100%
+
+      @include Mixins.tablet
+        border-radius: 1rem
+        min-height: 18rem
+
+      @include Mixins.desktop
+        min-height: 20rem
+
+    .mapouter
+      position: relative
+      text-align: right
+      width: 100%
+
+    .gmap-canvas
+      overflow: hidden
+      background: none !important
+
+  &-form
+    .form
+      display: grid
+      grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr))
+      gap: 1rem
+      place-items: flex-end
+
+      @include Mixins.tablet
+        .textarea
+          height: 12rem
+          grid-column: 1 / span 2
+
+        .button
+          grid-column: 2

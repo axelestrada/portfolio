@@ -4,16 +4,16 @@ import Head from "next/head";
 import Navbar from "/src/components/Navbar";
 
 import Profile from "/src/sections/Profile";
-import BlogSection from "/src/sections/Blog";
+import ContactSection from "/src/sections/Contact";
 
-const Blog: NextPage = () => {
+const Portfolio: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Axel Estrada | Blog</title>
+        <title>Axel Estrada | Contacto</title>
         <meta
           name="description"
-          content="Articulos sobre HTML, CSS, Javascript y todo lo relacionado al Desarrollo Web"
+          content="Ponte en contacto conmigo desde el formulario presente a continuacion"
         />
       </Head>
 
@@ -22,11 +22,11 @@ const Blog: NextPage = () => {
           <Navbar />
 
           <Profile />
-          <BlogSection />
+          <ContactSection />
         </div>
       </main>
     </div>
   );
 };
 
-export default Blog;
+export default Portfolio;

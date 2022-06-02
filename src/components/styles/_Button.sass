@@ -1,0 +1,54 @@
+@use "/src/styles/Mixins"
+
+.button
+  position: relative
+  transition: .1s transform ease
+  cursor: pointer
+  width: max-content
+  border: none
+  outline: none
+  padding: 0
+  background: none
+
+  &:hover
+    transform: scale(1.025)
+
+  &:active
+    transform: scale(1)
+
+  .content
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: .625rem
+    border-radius: 1.25rem
+    padding: 1rem 2rem
+    font-weight: 500
+    font-size: 1rem
+
+    .image
+      width: 1.25rem
+
+    .icon
+      font-size: 1.25rem
+
+  &.full-width
+    width: 100%
+
+  &.primary
+    .content
+      @include Mixins.shadow("primary")
+      background-color: $BlueRibbon
+      color: $White
+
+    &::before
+      @include Mixins.shadow("primary")
+      content: ''
+      position: absolute
+      z-index: -1
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: 64%
+      height: 1rem
+      background-color: $White

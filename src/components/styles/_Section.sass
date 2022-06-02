@@ -1,0 +1,58 @@
+
+@use "/src/styles/Mixins"
+
+.section
+  @include Mixins.card
+  display: flex
+  flex-direction: column
+  gap: 2rem
+
+  &>.title
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    font-size: 1.5rem
+    font-weight: 700
+
+    .underline
+      position: relative
+      display: inline-block
+      width: 3.125rem
+      height: .313rem
+      background-color: $BlueRibbon
+
+      &,
+      &::before
+        border-radius: 1rem
+
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 1rem
+        height: 100%
+        background-color: $AtomicTangerine
+
+  .article
+    display: flex
+    flex-direction: column
+    gap: 1.5rem
+
+    &>.title
+      display: flex
+      align-items: center
+      gap: .75rem
+      font-size: 1.313rem
+      font-weight: 700
+
+    &>.icon
+      width: 2rem
+      height: auto
+
+  @include Mixins.desktop
+    border-radius: 2rem
+    filter: none
+    padding: 1.5rem
+    max-height: 100%
+    overflow-y: auto

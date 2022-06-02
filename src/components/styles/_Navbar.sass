@@ -1,0 +1,142 @@
+@use "/src/styles/Mixins"
+
+.navbar
+  position: fixed
+  z-index: 9999
+
+  .menu
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 9999
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: .5rem
+    clip-path: circle(0 at 100% 0)
+    transition: clip-path .5s ease-in-out
+    width: 100%
+    height: 100vh
+    background-color: $White
+
+    .link
+      a
+        font-size: 1.438rem
+        line-height: 1.75rem
+        font-weight: 500
+        text-decoration: none
+        color: $Fiord
+        transition: color .2s ease-in-out
+
+      &.active a,
+      &:not(.active) a:hover
+        @include Mixins.shadow("primary-sm")
+        color: $BlueRibbon
+
+    &-toggle
+      @include Mixins.shadow("primary-sm")
+      position: fixed
+      top: 0
+      right: 0
+      z-index: 99999
+      display: flex
+      justify-content: center
+      align-items: center
+      transition-property: background-color, filter
+      transition-duration: .3s
+      transition-timing-function: ease-in-out
+      border: 1px solid $BlueRibbon
+      border-radius: 50% 0 50% 50%
+      width: 3.75rem
+      height: 3.75rem
+      background-color: $BlueRibbon
+      cursor: pointer
+
+      .hamburger
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        gap: .313rem
+        transition: transform .3s ease-in-out
+
+        span
+          transform-origin: 0 0
+          transition-property: transform, width, height, background-color
+          transition-duration: .3s
+          transition-timing-function: ease-in-out
+          width: 1.5rem
+          height: .188rem
+          background-color: $White
+
+          &:nth-child(2)
+            transform-origin: center
+            width: 1.25rem
+
+  #navbarInput
+    display: none
+
+    &:checked
+      & ~ .menu-toggle
+        filter: none
+        background-color: $White
+
+        .hamburger
+          transform: translateX(.25rem)
+
+          span
+            width: 1.3rem
+            height: .125rem
+            background-color: $BlueRibbon
+
+            &:nth-child(1)
+              transform: rotate(45deg)
+
+            &:nth-child(2)
+              transform: scaleX(0)
+
+            &:nth-child(3)
+              transform: rotate(-45deg) translate(-0.094rem, -0.031rem)
+
+      & ~ .menu
+        clip-path: circle(150% at 100% 0)
+
+  @include Mixins.desktop
+    .menu-toggle
+      display: none
+
+    .menu
+      top: -4.125rem
+      left: initial
+      right: 0
+      width: min-content
+      clip-path: none
+      flex-direction: row
+      align-items: center
+      gap: 2rem
+      padding: 0 2.5rem 0 0
+      border-radius: 0 2rem 0 0
+      height: 4.125rem
+
+      &::before
+        content: ""
+        position: absolute
+        top: -1px
+        left: -5.9rem
+        width: 5.9rem
+        height: calc(100% + 2px)
+        background-image: url("/assets/icons/navbar-edge.svg")
+        background-size: cover
+        background-repeat: no-repeat
+
+      .link
+        a
+          text-transform: uppercase
+          letter-spacing: 1px
+          font-size: 0.93rem
+
+        &.active a
+          padding: .5rem 1rem
+          border-radius: .625rem
+          background-color: $BlueRibbon
+          color: $White

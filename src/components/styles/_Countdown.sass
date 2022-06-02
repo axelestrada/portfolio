@@ -1,0 +1,29 @@
+@use "/src/styles/Mixins"
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
+
+.countdown
+  display: flex
+  justify-content: space-between
+  width: 100%
+  max-width: 20rem
+
+  @include Mixins.tablet
+    justify-content: center
+    max-width: none
+    gap: 3rem
+
+  .marker
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: .275rem
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
+    color: $RegentGray
+
+  .time-left
+    font-size: 2.8rem
+
+  @include Mixins.tablet
+    .time-left
+      font-size: 3.125rem

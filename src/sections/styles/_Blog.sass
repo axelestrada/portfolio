@@ -1,0 +1,18 @@
+@use "/src/styles/Mixins"
+
+.blog .coming-soon
+  justify-content: center
+  align-items: center
+  gap: 2rem
+  padding: 1rem  
+  height: 100%
+  text-align: center
+
+  .title
+    justify-content: center
+
+  @include Mixins.tablet
+    gap: 3rem
+
+    .title
+      font-size: 1.5rem

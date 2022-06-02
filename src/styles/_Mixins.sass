@@ -1,0 +1,33 @@
+@import Colors
+
+@mixin shadow($type: "")
+  @if $type == "primary"
+    filter: drop-shadow(0px 4px 32px rgba(48, 76, 253, 0.25)) drop-shadow(0px 4px 16px rgba(48, 76, 253, 0.25))
+
+  @else if $type == "primary-sm"
+    filter: drop-shadow(0px 8px 16px rgba(48, 76, 253, 0.15)) drop-shadow(0px 2px 4px rgba(48, 76, 253, 0.15))
+
+  @else if $type == "md"
+    filter: drop-shadow(0px 10px 60px rgba(134, 151, 168, 0.2))
+  @else
+    filter: drop-shadow(0px 40px 50px rgba(134, 151, 168, 0.1))
+
+@mixin card
+  @include shadow()
+  padding: 1rem
+  border-radius: 1rem
+  background-color: $White
+
+@mixin badge
+  border-radius: 10rem
+  padding: .5rem 1rem
+  background-color: $AthensGray
+  font-size: .938rem
+
+@mixin tablet
+  @media (min-width: 600px)
+    @content
+
+@mixin desktop
+  @media (min-width: 900px)
+    @content

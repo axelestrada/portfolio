@@ -1,0 +1,48 @@
+@use "styles/Mixins"
+
+.dropdown
+  position: relative
+
+  &__selected-option
+    position: relative
+    border-radius: 10rem
+    padding: 1rem 1.5rem
+    width: 100%
+    background-color: $BlackHaze
+    cursor: pointer
+    font-size: .938rem
+    color: $RegentGray
+
+  &__arrow
+    position: absolute
+    top: 50%
+    right: 1.5rem
+    display: flex
+    width: .5rem
+
+  &__list
+    @include Mixins.card
+    @include Mixins.shadow("md")
+    position: absolute
+    top: 3.8rem
+    left: 0
+    z-index: 100
+    overflow: hidden auto
+    width: 100%
+    max-height: 37.5rem
+    font-size: .938rem
+
+  &__item
+    padding: .5rem 1rem
+    cursor: pointer
+
+    &:first-child
+      padding-top: 1rem
+
+    &:last-child
+      padding-bottom: 1rem
+
+    &:hover,
+    &--selected
+      background-color: $BlueRibbon
+      color: $White
