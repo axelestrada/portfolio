@@ -32,7 +32,13 @@ const Button: FC<Props> = ({
         ) : (
           image && (
             <div className="image">
-              <Image src={image} width={50} height={50} layout="responsive" />
+              <Image
+                src={image}
+                width={50}
+                height={50}
+                layout="responsive"
+                alt=""
+              />
             </div>
           )
         )}

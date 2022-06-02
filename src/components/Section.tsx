@@ -27,7 +27,13 @@ export const Article: FC<{
       <h4 className="title">
         {icon && (
           <div className="icon">
-            <Image src={icon} width={20} height={20} layout="responsive" />
+            <Image
+              src={icon}
+              width={20}
+              height={20}
+              layout="responsive"
+              alt=""
+            />
           </div>
         )}
         {title}

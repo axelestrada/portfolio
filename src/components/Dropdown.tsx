@@ -39,6 +39,7 @@ const Dropdown: FC<{ placeholder?: string; options: string[] }> = ({
             width={10}
             height={10}
             layout="responsive"
+            alt=""
           />
         </i>
       </div>
