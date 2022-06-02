@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Section, { Article } from "../components/Section";
 import Timeline, { TimelineItem } from "../components/Timeline";
 import ProgressBar from "../components/ProgressBar";

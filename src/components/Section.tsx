@@ -1,9 +1,9 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import Image from "next/image";
 
 const Section: FC<{
   title: string;
-  className: string;
+  className?: string;
   children: ReactNode;
 }> = ({ title, className, children }) => (
   <section className={`section ${className || ""}`}>
@@ -19,7 +19,7 @@ const Section: FC<{
 export const Article: FC<{
   title?: string;
   icon?: string;
-  className: string;
+  className?: string;
   children: ReactNode;
 }> = ({ title, icon, className, children }) => (
   <article className={`article ${className || ""}`}>

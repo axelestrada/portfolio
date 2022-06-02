@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import Image from "next/image";
 
 import Section, { Article } from "../components/Section";
@@ -59,7 +59,7 @@ export default function Home() {
 }
 
 const Service: FC<{
-  icon: ReactNode;
+  icon: string;
   title: string;
   description: string;
 }> = ({ icon, title, description }) => (

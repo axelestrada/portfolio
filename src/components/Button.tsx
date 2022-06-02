@@ -1,4 +1,4 @@
-import { FC, ReactElement } from "react";
+import { FC } from "react";
 import Image from "next/image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

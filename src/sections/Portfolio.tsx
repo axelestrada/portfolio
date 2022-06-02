@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 
-import Section, { Article } from "../components/Section";
+import Section from "../components/Section";
 import Dropdown from "../components/Dropdown";
 import Copyright from "../components/Copyright";
 
@@ -16,7 +16,7 @@ const categories: string[] = [
 ];
 
 const projects: {
-  imageSrc: StaticImageData;
+  imageSrc: string;
   title: string;
   categories: string[];
 }[] = [];
@@ -51,7 +51,7 @@ export default function Portfolio() {
 }
 
 const Project: FC<{
-  imageSrc: StaticImageData;
+  imageSrc: string;
   title: string;
   categories: string[];
 }> = ({ imageSrc, title, categories }) => (

@@ -16,10 +16,7 @@ export const Input: FC<{
   </div>
 );
 
-export const Textarea: FC<{ type: string; placeholder: string }> = ({
-  type,
-  placeholder,
-}) => (
+export const Textarea: FC<{ placeholder: string }> = ({ placeholder }) => (
   <div className="textarea">
     <textarea placeholder={placeholder} autoComplete="off"></textarea>
   </div>
@@ -29,4 +26,4 @@ export const Submit: FC<{ title: string; image?: string; icon?: IconProp }> = ({
   title,
   image,
   icon,
-}) => <Button title={title} buttonType="submit" icon={icon} />;
+}) => <Button title={title} buttonType="submit" icon={icon} image={image} />;

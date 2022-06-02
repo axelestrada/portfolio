@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 
@@ -17,8 +16,8 @@ export default function Portfolio() {
               src="https://maps.google.com/maps?q=Tegucigalpa,%20Honduras&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameBorder="0"
               scrolling="no"
-              marginHeight="0"
-              marginWidth="0"
+              marginHeight={0}
+              marginWidth={0}
             ></iframe>
           </div>
         </div>
