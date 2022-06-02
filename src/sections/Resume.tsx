@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import Section, { Article } from "/src/components/Section";
-import Timeline, { TimelineItem } from "/src/components/Timeline";
-import ProgressBar from "/src/components/ProgressBar";
-import Copyright from "/src/components/Copyright";
+import Section, { Article } from "../components/Section";
+import Timeline, { TimelineItem } from "../components/Timeline";
+import ProgressBar from "../components/ProgressBar";
+import Copyright from "../components/Copyright";
 
 export default function Resume() {
   return (

@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Navbar from "/src/components/Navbar";
+import Navbar from "../src/components/Navbar";
 
-import Profile from "/src/sections/Profile";
-import ResumeSection from "/src/sections/Resume";
+import Profile from "../src/sections/Profile";
+import ResumeSection from "../src/sections/Resume";
 
 const Resume: NextPage = () => {
   return (

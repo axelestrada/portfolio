@@ -1,9 +1,9 @@
 import { FC } from "react";
 import Image from "next/image";
 
-import Section, { Article } from "/src/components/Section";
-import Dropdown from "/src/components/Dropdown";
-import Copyright from "/src/components/Copyright";
+import Section, { Article } from "../components/Section";
+import Dropdown from "../components/Dropdown";
+import Copyright from "../components/Copyright";
 
 const categories: string[] = [
   "Todos",

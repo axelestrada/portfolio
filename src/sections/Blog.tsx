@@ -1,7 +1,7 @@
-import Section, { Article } from "/src/components/Section";
-import Countdown from "/src/components/Countdown";
-import Newsletter from "/src/components/Newsletter";
-import Copyright from "/src/components/Copyright";
+import Section, { Article } from "../components/Section";
+import Countdown from "../components/Countdown";
+import Newsletter from "../components/Newsletter";
+import Copyright from "../components/Copyright";
 
 export default function Blog() {
   return (

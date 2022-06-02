@@ -1,8 +1,8 @@
 import { FC, ReactNode } from "react";
 import Image from "next/image";
 
-import Section, { Article } from "/src/components/Section";
-import Copyright from "/src/components/Copyright";
+import Section, { Article } from "../components/Section";
+import Copyright from "../components/Copyright";
 
 export default function Home() {
   return (

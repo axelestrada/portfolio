@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 
-import Section, { Article } from "/src/components/Section";
-import { Input, Textarea, Submit } from "/src/components/FormFields";
-import Copyright from "/src/components/Copyright";
+import Section, { Article } from "../components/Section";
+import { Input, Textarea, Submit } from "../components/FormFields";
+import Copyright from "../components/Copyright";
 
 export default function Portfolio() {
   return (
