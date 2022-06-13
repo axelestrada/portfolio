@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { faUser, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 
@@ -6,6 +8,41 @@ import { Input, Textarea, Submit } from "../components/FormFields";
 import Copyright from "../components/Copyright";
 
 export default function Portfolio() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendMail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const data = {
+      name,
+      email,
+      message,
+    };
+
+    console.log("Sending Data", data);
+
+    fetch("/api/send-mail", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      console.log("Response received");
+
+      if (res.status === 200) {
+        console.log("Response succeeded!");
+
+        setName("");
+        setEmail("");
+        setMessage("");
+      }
+    });
+  };
+
   return (
     <Section title="Contacto" className="contact">
       <Article className="map">
@@ -24,17 +61,27 @@ export default function Portfolio() {
       </Article>
 
       <Article title="Formulario de Contacto" className="contact-form">
-        <form
-          className="form"
-          onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
-            e.preventDefault();
-            console.log("Enviando Mensaje...");
-          }}
-        >
-          <Input icon={faUser} type="text" placeholder="Nombre" />
-          <Input icon={faEnvelope} type="email" placeholder="Email" />
+        <form className="form" onSubmit={sendMail}>
+          <Input
+            value={name}
+            setState={setName}
+            icon={faUser}
+            type="text"
+            placeholder="Nombre"
+          />
+          <Input
+            value={email}
+            setState={setEmail}
+            icon={faEnvelope}
+            type="email"
+            placeholder="Email"
+          />
 
-          <Textarea placeholder="Escriba su mensaje" />
+          <Textarea
+            value={message}
+            setState={setMessage}
+            placeholder="Escriba su mensaje"
+          />
 
           <Submit title="Enviar Mensaje" icon={faLocationArrow} />
         </form>
