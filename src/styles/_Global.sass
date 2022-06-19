@@ -1,5 +1,21 @@
 @use "Mixins"
 
+// Scrollbar
+::-webkit-scrollbar
+  width: 8px
+  height: 8px
+
+  &-thumb
+    background-color: $AthensGray
+    border-radius: 4px
+
+    &:hover,
+    &:active
+      background-color: $Gainsboro
+
+  &-track
+    background: none
+
 body
   font-family: 'Inter', sans-serif
   font-weight: 400
@@ -39,8 +55,7 @@ main
   @include Mixins.desktop
     padding: 1rem
 
-    &>.container
-      @include Mixins.shadow("md")
+    &>.container      
       position: relative
       padding: 0
       margin-top: 4.125rem
@@ -51,3 +66,10 @@ main
       gap: 0
       border-radius: 2rem 0 2rem 2rem
       background-color: $White
+      box-shadow: 0px 10px 60px rgba(134, 151, 168, 0.2)
+
+      @media (max-height: 678px) and (min-height: 600px)
+        height: calc(100vh - 6.125rem)
+        
+        
+      

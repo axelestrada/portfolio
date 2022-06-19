@@ -7,7 +7,9 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import {
   faFacebookF,
   faGithub,
+  faInstagram,
   faLinkedinIn,
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Button from "../components/Button";
@@ -19,8 +21,8 @@ export default function Profile() {
         <Image
           src="/assets/images/profile-avatar.svg"
           alt="Axel Estrada"
-          width={100}
-          height={100}
+          width={180}
+          height={180}
           layout="responsive"
           priority
         />
@@ -40,7 +42,17 @@ export default function Profile() {
           />
 
           <SocialNetwork
-            href="https://github.com/axelestrada/"
+            href="https://twitter.com/axelestradadev"
+            icon={faTwitter}
+          />
+
+          <SocialNetwork
+            href="https://www.instagram.com/axelestradadev"
+            icon={faInstagram}
+          />
+
+          <SocialNetwork
+            href="https://github.com/axelestrada"
             icon={faGithub}
           />
 

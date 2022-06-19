@@ -14,7 +14,7 @@ const Countdown: FC<{}> = ({}) => {
     const getCountdown = setInterval(() => {
       const currentDate = new Date();
       const targetDate = new Date(
-        "Thu Jun 30 2022 18:00:00 GMT-0600 (Central Standard Time)"
+        "Thu Jul 30 2022 18:00:00 GMT-0600 (Central Standard Time)"
       );
 
       let secondsLeft = (targetDate.valueOf() - currentDate.valueOf()) / 1000;

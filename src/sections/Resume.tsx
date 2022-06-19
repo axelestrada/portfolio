@@ -38,7 +38,7 @@ export default function Resume() {
         </Timeline>
       </Article>
 
-      <Article title="Habilidades">
+      <Article title="Habilidades" icon="/assets/icons/dev.svg">
         <div className="skills">
           <div className="skills-group">
             <h5 className="title">Front-End</h5>
@@ -46,7 +46,7 @@ export default function Resume() {
             <div className="container">
               <ProgressBar title="HTML" progress={90} />
               <ProgressBar title="CSS / SASS" progress={85} />
-              <ProgressBar title="Tailwind" progress={80} />
+              <ProgressBar title="Tailwind CSS" progress={80} />
               <ProgressBar title="Javascript" progress={85} />
               <ProgressBar title="Typescript" progress={75} />
               <ProgressBar title="ReactJS / NextJS" progress={80} />
@@ -58,7 +58,7 @@ export default function Resume() {
 
             <div className="container">
               <ProgressBar title="PHP" progress={70} />
-              <ProgressBar title="Nodejs" progress={85} />
+              <ProgressBar title="NodeJS" progress={85} />
               <ProgressBar title="Express" progress={80} />
               <ProgressBar title="Mongoose" progress={75} />
               <ProgressBar title="MongoDB" progress={70} />

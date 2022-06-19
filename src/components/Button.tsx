@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, MouseEventHandler } from "react";
 import Image from "next/image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,6 +11,7 @@ interface Props {
   icon?: IconProp;
   image?: string;
   fullWidth?: Boolean;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
 const Button: FC<Props> = ({
@@ -20,11 +21,13 @@ const Button: FC<Props> = ({
   buttonType = "button",
   image,
   fullWidth = false,
+  onClick = () => {},
 }) => {
   return (
     <button
       type={buttonType}
       className={`button ${type} ${fullWidth ? "full-width" : ""}`}
+      onClick={onClick}
     >
       <div className="content">
         {icon ? (

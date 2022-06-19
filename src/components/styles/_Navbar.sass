@@ -102,13 +102,19 @@
         clip-path: circle(150% at 100% 0)
 
   @include Mixins.desktop
+    position: absolute
+    top: -4.125rem    
+    display: flex
+    justify-content: flex-end
+    width: 100%
+    height: 4.125rem
+    overflow: visible    
+
     .menu-toggle
       display: none
 
     .menu
-      top: -4.125rem
-      left: initial
-      right: 0
+      position: relative
       width: min-content
       clip-path: none
       flex-direction: row
