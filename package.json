@@ -16,11 +16,13 @@
     "@svgr/webpack": "^6.2.1",
     "@types/nodemailer": "^6.4.4",
     "dotenv": "^16.0.1",
+    "formik": "^2.2.9",
     "next": "^12.1.6",
     "nodemailer": "^6.7.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.49.7"
+    "sass": "^1.49.7",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "17.0.8",
