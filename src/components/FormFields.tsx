@@ -1,45 +1,73 @@
-import { FC, Dispatch, SetStateAction, ChangeEvent } from "react";
+import {
+  FC,
+  Dispatch,
+  SetStateAction,
+  ChangeEvent,
+  ChangeEventHandler,
+  FocusEventHandler,
+} from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 import Button from "./Button";
+import { faInfo } from "@fortawesome/free-solid-svg-icons";
 
 export const Input: FC<{
   type: string;
+  name: string;
   icon?: IconProp;
   placeholder: string;
+  error?: string;
   value: string;
-  setState: Dispatch<SetStateAction<string>>;
-}> = ({ icon, type, placeholder, setState, value }) => (
-  <div className="input">
-    {icon && <FontAwesomeIcon icon={icon} />}
+  onChange: ChangeEventHandler<HTMLInputElement>;
+  onBlur: FocusEventHandler<HTMLInputElement>;
+}> = ({ type, name, icon, placeholder, error, value, onChange, onBlur }) => (
+  <div className={`input ${error && "error"}`}>
+    {icon && <FontAwesomeIcon icon={icon} className="icon" />}
     <input
-      value={value}
       type={type}
+      name={name}
       placeholder={placeholder}
       autoComplete="off"
-      onChange={(e: ChangeEvent<HTMLInputElement>) => {
-        setState(e.target.value);
-      }}
+      value={value}
+      onChange={onChange}
+      onBlur={onBlur}
     />
+
+    {error && (
+      <div className="error">
+        <FontAwesomeIcon icon={faInfo} className="icon" />
+        <div className="tooltip">{error}</div>
+      </div>
+    )}
   </div>
 );
 
 export const Textarea: FC<{
+  name: string;
   placeholder: string;
+  error?: string;
   value: string;
-  setState: Dispatch<SetStateAction<string>>;
-}> = ({ placeholder, setState, value }) => (
-  <div className="textarea">
+  onChange: ChangeEventHandler<HTMLTextAreaElement>;
+  onBlur: FocusEventHandler<HTMLTextAreaElement>;
+}> = ({ name, placeholder, error, value, onChange, onBlur }) => (
+  <div className={`textarea ${error && "error"}`}>
     <textarea
+      name={name}
       value={value}
       placeholder={placeholder}
       autoComplete="off"
-      onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
-        setState(e.target.value)
-      }
+      onChange={onChange}
+      onBlur={onBlur}
     ></textarea>
+
+    {error && (
+      <div className="error">
+        <FontAwesomeIcon icon={faInfo} className="icon" />
+        <div className="tooltip">{error}</div>
+      </div>
+    )}
   </div>
 );
 

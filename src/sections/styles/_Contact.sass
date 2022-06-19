@@ -31,6 +31,9 @@
       grid-template-columns: repeat(auto-fill, minmax(16.25rem, 1fr))
       gap: 1rem
       place-items: flex-end
+     
+      &.sending .button .icon
+        animation: rotate 1s linear infinite
 
       @include Mixins.tablet
         gap: 1.5rem
@@ -41,3 +44,10 @@
 
         .button
           grid-column: 2
+
+@keyframes rotate 
+  0%
+    transform: rotate(0turn)
+
+  100%
+    transform: rotate(1turn)
