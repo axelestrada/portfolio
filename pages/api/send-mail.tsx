@@ -28,8 +28,12 @@ async function main(req: NextApiRequest, res: NextApiResponse) {
       EMAIL_REFRESH_TOKEN,
     } = process.env;
 
+    console.log(process.env)
+
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
       auth: {
         type: "OAuth2",
         user: EMAIL_USER,

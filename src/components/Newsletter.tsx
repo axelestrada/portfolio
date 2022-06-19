@@ -2,7 +2,6 @@
 import { useFormik } from "formik";
 import * as yup from "yup";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 import Button from "./Button";
