@@ -28,8 +28,6 @@ async function main(req: NextApiRequest, res: NextApiResponse) {
       EMAIL_REFRESH_TOKEN,
     } = process.env;
 
-    console.log(process.env)
-
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
