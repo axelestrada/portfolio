@@ -1,0 +1,85 @@
+@use "/src/styles/Mixins"
+  
+.alert
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 99999
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 100%
+  padding: 1rem
+  background-color: rgb(0 0 0 / .1)
+  backdrop-filter: blur(1px)
+  transition: opacity .3s ease-in-out
+  opacity: 1
+  
+  .card
+    position: relative
+    @include Mixins.card 
+    padding: 2rem
+    gap: 1.5rem
+    max-width: 22.5rem
+
+    @include Mixins.desktop
+      border-radius: 2rem
+
+    .icon
+      width: 5rem
+      height: 5rem
+      padding: 1.25rem
+      border-radius: 100%  
+
+    .close
+      position: absolute
+      top: 1rem
+      right: 1.5rem
+      color: $RegentGray
+      font-size: 1.1rem
+      cursor: pointer   
+
+    &,
+    .content
+      display: flex
+      flex-direction: column
+      align-items: center
+
+    .content
+      gap: .5rem
+
+      .title
+        font-size: 1.5rem
+        font-weight: 700        
+
+      .description
+        line-height: 1.25
+        text-align: center
+        color: $RegentGray
+
+  &.success .card
+    .icon
+      background-color: $BlueRibbon
+      @include Mixins.shadow("primary-sm")
+
+    .content .title
+      color: $BlueRibbon
+
+  &.error .card
+    .icon
+      background-color: $MagicPotion
+      filter: drop-shadow(0px 8px 16px rgba($MagicPotion, 0.15)) drop-shadow(0px 2px 4px rgba($MagicPotion, 0.15))
+
+    .content .title
+      color: $MagicPotion
+
+    .button.primary
+        .content
+          background-color: $MagicPotion
+        .content,
+        &::before
+          filter: drop-shadow(0px 4px 32px rgba($MagicPotion, 0.25)) drop-shadow(0px 4px 16px rgba($MagicPotion, 0.25))
+
+
+
