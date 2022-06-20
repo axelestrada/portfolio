@@ -14,7 +14,7 @@ const Portfolio: NextPage = () => {
         <meta
           name="description"
           content="Aqui te comparto algunos de los mejores proyectos en los
-          que he trabajado, haciendo uso de diferentes tecnologias y frameworks
+          que he trabajado, haciendo uso de diferentes tecnologías y frameworks
           segun sea requerido"
         />
       </Head>

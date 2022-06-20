@@ -12,7 +12,7 @@ const Index: NextPage = () => {
         <title>Axel Estrada | Desarrollador Web</title>
         <meta
           name="description"
-          content="Desarrollador Web especializado en la costrucci'on de sitios web personalizados."
+          content="Desarrollador Web especializado en la costrucción de sitios web personalizados."
         />
       </Head>
 

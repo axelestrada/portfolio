@@ -13,7 +13,7 @@ const Resume: NextPage = () => {
         <title>Axel Estrada | Curriculum</title>
         <meta
           name="description"
-          content="La mayoria de los conocimientos que he adquirido a lo largo
+          content="La mayoría de los conocimientos que he adquirido a lo largo
           del tiempo han sido de manera autodidacta, tomando cursos en diferentes
           plataformas de educacion online"
         />
