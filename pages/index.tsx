@@ -12,9 +12,35 @@ const Index: NextPage = () => {
         <title>Axel Estrada | Desarrollador Web</title>
         <meta
           name="description"
-          content="Desarrollador Web especializado en la costrucción de sitios web personalizados."
+          content="Desarrollador web especializado en la construcción de aplicaciones y sitios web haciendo uso de diferentes tecnologías según sea requerido para lograr el mejor resultado final."
         />
-        <link rel="canonical" href="https://axelestrada.ml"/>
+        <link rel="canonical" href="https://axelestrada.ml" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="es_HN" />
+        <meta property="og:title" content="Axel Estrada | Desarrollador Web" />
+        <meta
+          property="og:description"
+          content="Desarrollador web especializado en la construcción de aplicaciones y sitios web haciendo uso de diferentes tecnologías según sea requerido para lograr el mejor resultado final."
+        />
+        <meta
+          property="og:image"
+          content="https://axelestrada.ml/assets/images/profile-avatar.svg"
+        />
+        <meta property="og:url" content="https://axelestrada.ml" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Axel Estrada | Desarrollador Web" />
+        <meta name="twitter:url" content="https://axelestrada.ml" />
+        <meta name="twitter:site" content="@axelestradadev" />
+        <meta
+          name="twitter:description"
+          content="Desarrollador web especializado en la construcción de aplicaciones y sitios web haciendo uso de diferentes tecnologías según sea requerido para lograr el mejor resultado final."
+        />
+        <meta
+          name="twitter:image"
+          content="https://axelestrada.ml/assets/images/profile-avatar.svg"
+        />
       </Head>
 
       <main>
