@@ -14,6 +14,7 @@ const Index: NextPage = () => {
           name="description"
           content="Desarrollador Web especializado en la costrucción de sitios web personalizados."
         />
+        <link rel="canonical" href="https://axelestrada.ml"/>
       </Head>
 
       <main>

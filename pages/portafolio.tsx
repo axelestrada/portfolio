@@ -17,6 +17,8 @@ const Portfolio: NextPage = () => {
           que he trabajado, haciendo uso de diferentes tecnologías y frameworks
           segun sea requerido"
         />
+
+        <link rel="canonical" href="https://axelestrada.ml/portafolio"/>
       </Head>
 
       <main>

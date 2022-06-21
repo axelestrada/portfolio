@@ -15,6 +15,8 @@ const Portfolio: NextPage = () => {
           name="description"
           content="Ponte en contacto conmigo desde el formulario presente a continuación"
         />
+
+        <link rel="canonical" href="https://axelestrada.ml/contacto" />
       </Head>
 
       <main>

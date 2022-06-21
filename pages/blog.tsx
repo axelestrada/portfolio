@@ -15,6 +15,8 @@ const Blog: NextPage = () => {
           name="description"
           content="Articulos sobre HTML, CSS, Javascript y todo lo relacionado al Desarrollo Web"
         />
+
+        <link rel="canonical" href="https://axelestrada.ml/blog" />
       </Head>
 
       <main>

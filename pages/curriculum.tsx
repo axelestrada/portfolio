@@ -17,6 +17,8 @@ const Resume: NextPage = () => {
           del tiempo han sido de manera autodidacta, tomando cursos en diferentes
           plataformas de educacion online"
         />
+
+        <link rel="canonical" href="https://axelestrada.ml/curriculum"/>
       </Head>
 
       <main>
