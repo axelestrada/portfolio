@@ -1,5 +1,4 @@
 import { FC, MouseEventHandler } from "react";
-import Image from "next/image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
@@ -9,7 +8,6 @@ interface Props {
   type?: "primary";
   buttonType?: "button" | "reset" | "submit" | undefined;
   icon?: IconProp;
-  image?: string;
   fullWidth?: Boolean;
   onClick?: MouseEventHandler<HTMLButtonElement>;
 }
@@ -19,7 +17,6 @@ const Button: FC<Props> = ({
   title,
   type = "primary",
   buttonType = "button",
-  image,
   fullWidth = false,
   onClick = () => {},
 }) => {
@@ -30,21 +27,7 @@ const Button: FC<Props> = ({
       onClick={onClick}
     >
       <div className="content">
-        {icon ? (
-          <FontAwesomeIcon className="icon" icon={icon} />
-        ) : (
-          image && (
-            <div className="image">
-              <Image
-                src={image}
-                width={50}
-                height={50}
-                layout="responsive"
-                alt=""
-              />
-            </div>
-          )
-        )}
+        {icon && <FontAwesomeIcon className="icon" icon={icon} />}
 
         {title}
       </div>

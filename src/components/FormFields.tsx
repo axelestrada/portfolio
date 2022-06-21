@@ -71,8 +71,7 @@ export const Textarea: FC<{
   </div>
 );
 
-export const Submit: FC<{ title: string; image?: string; icon?: IconProp }> = ({
+export const Submit: FC<{ title: string; icon?: IconProp }> = ({
   title,
-  image,
   icon,
-}) => <Button title={title} buttonType="submit" icon={icon} image={image} />;
+}) => <Button title={title} buttonType="submit" icon={icon} />;

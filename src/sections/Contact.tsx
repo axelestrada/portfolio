@@ -111,7 +111,7 @@ export default function Portfolio() {
 
         setMessageStatus("default");
 
-        console.error(data.error)
+        console.error(data.error);
       }
     });
   };

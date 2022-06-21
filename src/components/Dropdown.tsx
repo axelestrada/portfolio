@@ -1,5 +1,6 @@
 import { FC, useState } from "react";
-import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const Dropdown: FC<{ placeholder?: string; options: string[] }> = ({
   placeholder,
@@ -34,13 +35,7 @@ const Dropdown: FC<{ placeholder?: string; options: string[] }> = ({
             })`,
           }}
         >
-          <Image
-            src="/assets/icons/chevron-up.svg"
-            width={10}
-            height={10}
-            layout="responsive"
-            alt=""
-          />
+          <FontAwesomeIcon icon={faChevronUp} />
         </i>
       </div>
 

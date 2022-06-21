@@ -19,9 +19,10 @@ const Section: FC<{
 export const Article: FC<{
   title?: string;
   icon?: string;
+  iconAlt?: string;
   className?: string;
   children: ReactNode;
-}> = ({ title, icon, className, children }) => (
+}> = ({ title, icon, iconAlt, className, children }) => (
   <article className={`article ${className || ""}`}>
     {title && (
       <h4 className="title">
@@ -32,7 +33,7 @@ export const Article: FC<{
               width={20}
               height={20}
               layout="responsive"
-              alt=""
+              alt={iconAlt}
             />
           </div>
         )}

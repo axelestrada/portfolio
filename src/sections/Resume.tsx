@@ -6,7 +6,11 @@ import Copyright from "../components/Copyright";
 export default function Resume() {
   return (
     <Section title="Curriculum" className="resume">
-      <Article title="Educacion" icon="/assets/icons/education.svg">
+      <Article
+        title="Educacion"
+        icon="/assets/icons/education.svg"
+        iconAlt="graduation cap"
+      >
         <Timeline>
           <TimelineItem
             title="Diseño Web Responsive"
@@ -38,7 +42,11 @@ export default function Resume() {
         </Timeline>
       </Article>
 
-      <Article title="Habilidades" icon="/assets/icons/dev.svg">
+      <Article
+        title="Habilidades"
+        icon="/assets/icons/dev.svg"
+        iconAlt="web development"
+      >
         <div className="skills">
           <div className="skills-group">
             <h5 className="title">Front-End</h5>

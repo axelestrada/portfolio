@@ -13,7 +13,7 @@ export default function Newsletter() {
       email: "",
     },
     onSubmit: () => {
-      console.log(formik.values.email)
+      console.log(formik.values.email);
     },
     validationSchema: yup.object({
       email: yup

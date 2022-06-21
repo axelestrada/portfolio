@@ -12,6 +12,15 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
+import {
+  faCalendar,
+  faMapMarker,
+  faEnvelope,
+  faCellphone,
+  faWorld,
+  faDownload,
+} from "../icons/customIcons";
+
 import Button from "../components/Button";
 
 export default function Profile() {
@@ -63,40 +72,30 @@ export default function Profile() {
         </ul>
 
         <ul className="details">
-          <DetailsItem
-            text="30 de abril del 2003"
-            icon="/assets/icons/calendar.svg"
-          />
+          <DetailsItem text="30 de abril del 2003" icon={faCalendar} />
 
-          <DetailsItem
-            text="Tegucigalpa, Honduras"
-            icon="/assets/icons/map-marker.svg"
-          />
+          <DetailsItem text="Tegucigalpa, Honduras" icon={faMapMarker} />
 
           <DetailsItem
             text="hola@axelestrada.dev"
-            icon="/assets/icons/envelope.svg"
+            icon={faEnvelope}
             href="mailto:hola@axelestrada.dev"
           />
 
           <DetailsItem
             text="+504 9520-3946"
-            icon="/assets/icons/cellphone.svg"
+            icon={faCellphone}
             href="tel:+50495203946"
           />
 
           <DetailsItem
             text="infinitycss.com"
-            icon="/assets/icons/world.svg"
+            icon={faWorld}
             href="https://infinitycss.com"
           />
         </ul>
 
-        <Button
-          title="Descargar CV"
-          image="/assets/icons/download.svg"
-          fullWidth
-        />
+        <Button title="Descargar CV" icon={faDownload} fullWidth />
       </div>
     </section>
   );
@@ -113,15 +112,13 @@ const SocialNetwork: FC<{ href: string; icon: IconProp }> = ({
   </li>
 );
 
-const DetailsItem: FC<{ text: string; icon: string; href?: string }> = ({
+const DetailsItem: FC<{ text: string; icon: IconProp; href?: string }> = ({
   text,
   icon,
   href,
 }) => (
   <li className="item">
-    <div className="icon">
-      <Image src={icon} width={20} height={20} layout="responsive" />
-    </div>
+    <FontAwesomeIcon icon={icon} className="icon" />
 
     {href ? (
       <a href={href} className="link" target="_blank">

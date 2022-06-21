@@ -1,9 +1,9 @@
-@use "styles/Mixins"
+@use "/src/styles/Mixins"
 
 .dropdown
   position: relative
 
-  &__selected-option
+  .selected-option
     position: relative
     border-radius: 10rem
     padding: 1rem 1.5rem
@@ -13,14 +13,16 @@
     font-size: .938rem
     color: $RegentGray
 
-  &__arrow
-    position: absolute
-    top: 50%
-    right: 1.5rem
-    display: flex
-    width: .5rem
+    .arrow
+      position: absolute
+      top: 50%
+      right: 1.5rem
+      display: flex
+      
+      .icon
+        font-size: 1rem
 
-  &__list
+  .list
     @include Mixins.card
     @include Mixins.shadow("md")
     position: absolute
@@ -32,17 +34,17 @@
     max-height: 37.5rem
     font-size: .938rem
 
-  &__item
-    padding: .5rem 1rem
-    cursor: pointer
+    .item
+      padding: .5rem 1rem
+      cursor: pointer
 
-    &:first-child
-      padding-top: 1rem
+      &:first-child
+        padding-top: 1rem
 
-    &:last-child
-      padding-bottom: 1rem
+      &:last-child
+        padding-bottom: 1rem
 
-    &:hover,
-    &--selected
-      background-color: $BlueRibbon
-      color: $White
+      &:hover,
+      &.selected
+        color: $BlueRibbon
+        @include Mixins.shadow("primary-sm")

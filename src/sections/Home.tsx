@@ -28,25 +28,29 @@ export default function Home() {
       <Article title="¿Que puedo ofrecer?" className="services">
         <div className="container">
           <Service
-            icon="/assets/icons/dev.svg"
+            image="/assets/icons/dev.svg"
+            imageAlt="web development"
             title="Desarrollo Web"
             description="Construcción de sitios de alta calidad a nivel profesional."
           />
 
           <Service
-            icon="/assets/icons/phone.svg"
+            image="/assets/icons/phone.svg"
+            imageAlt="smartphone"
             title="Aplicaciones Móviles"
             description="Desarrollo profesional de aplicaciones para Android y iOS."
           />
 
           <Service
-            icon="/assets/icons/seo.svg"
+            image="/assets/icons/seo.svg"
+            imageAlt="seo optimization"
             title="Optimización de SEO"
             description="Mejora del posicionamiento de su sitio web en motores de búsqueda."
           />
 
           <Service
-            icon="/assets/icons/maintenance.svg"
+            image="/assets/icons/maintenance.svg"
+            imageAlt="website maintenance"
             title="Actualización y Mantenimiento"
             description="Constante actualización y mantenimiento de su sitio web."
           />
@@ -59,13 +63,20 @@ export default function Home() {
 }
 
 const Service: FC<{
-  icon: string;
+  image: string;
+  imageAlt: string;
   title: string;
   description: string;
-}> = ({ icon, title, description }) => (
+}> = ({ image, imageAlt, title, description }) => (
   <div className="service">
-    <div className="icon">
-      <Image src={icon} layout="responsive" width={50} height={50} />
+    <div className="image">
+      <Image
+        src={image}
+        layout="responsive"
+        width={50}
+        height={50}
+        alt={imageAlt}
+      />
     </div>
     <h4 className="title">{title}</h4>
     <p className="description">{description}</p>

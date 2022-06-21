@@ -13,7 +13,7 @@ const Portfolio: NextPage = () => {
         <title>Axel Estrada | Contacto</title>
         <meta
           name="description"
-          content="Ponte en contacto conmigo desde el formulario presente a continuacion"
+          content="Ponte en contacto conmigo desde el formulario presente a continuación"
         />
       </Head>
 
