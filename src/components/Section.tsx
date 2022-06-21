@@ -7,10 +7,10 @@ const Section: FC<{
   children: ReactNode;
 }> = ({ title, className, children }) => (
   <section className={`section ${className || ""}`}>
-    <h3 className="title">
+    <h2 className="title">
       {title}
       <span className="underline"></span>
-    </h3>
+    </h2>
 
     {children}
   </section>
@@ -25,7 +25,7 @@ export const Article: FC<{
 }> = ({ title, icon, iconAlt, className, children }) => (
   <article className={`article ${className || ""}`}>
     {title && (
-      <h4 className="title">
+      <h3 className="title">
         {icon && (
           <div className="icon">
             <Image
@@ -38,7 +38,7 @@ export const Article: FC<{
           </div>
         )}
         {title}
-      </h4>
+      </h3>
     )}
 
     {children}
