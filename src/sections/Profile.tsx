@@ -56,7 +56,7 @@ export default function Profile() {
           />
 
           <SocialNetwork
-            href="https://www.instagram.com/axelestradadev"
+            href="https://instagram.com/axelestradadev"
             icon={faInstagram}
           />
 
@@ -66,7 +66,7 @@ export default function Profile() {
           />
 
           <SocialNetwork
-            href="https://www.linkedin.com/in/axelestradadev"
+            href="https://linkedin.com/in/axelestradadev"
             icon={faLinkedinIn}
           />
         </ul>
