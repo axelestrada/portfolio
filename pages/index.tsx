@@ -25,7 +25,7 @@ const Index: NextPage = () => {
         />
         <meta
           property="og:image"
-          content="https://axelestrada.ml/assets/images/profile-avatar.jpg"
+          content="https://axelestrada.ml/assets/images/index-preview.jpeg"
         />
         <meta property="og:url" content="https://axelestrada.ml" />
 
@@ -39,7 +39,7 @@ const Index: NextPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://axelestrada.ml/assets/images/profile-avatar.jpg"
+          content="https://axelestrada.ml/assets/images/index-preview.jpeg"
         />
       </Head>
 
