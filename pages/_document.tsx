@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="es">
       <Head>
+        <meta name="robots" content="index, follow" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
