@@ -39,18 +39,16 @@
       &-media
         display: flex
         align-items: center
-        gap: 0.813rem
+        gap: 1.25rem
 
-      &-network
-        font-size: 1.15rem
+      &-network .icon
+        font-size: 1.3rem
+        color: $Fiord
+        transition: color .2s ease-in-out
 
-        .icon
-          color: $Fiord
-          transition: color .2s ease-in-out
-
-          &:hover
-            @include  Mixins.shadow("primary-sm")
-            color: $BlueRibbon
+        &:hover
+          @include  Mixins.shadow("primary-sm")
+          color: $BlueRibbon
 
     .details
       display: none
@@ -96,6 +94,13 @@
       transform: none
 
     .information
+      .social
+        &-media
+          gap: 0.813rem
+
+        &-network .icon
+          font-size: 1.1rem
+
       .details
         display: flex
 
