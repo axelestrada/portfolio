@@ -28,7 +28,7 @@ export default function Profile() {
     <section className="profile">
       <div className="picture">
         <Image
-          src="/assets/images/profile-avatar.svg"
+          src="/assets/images/profile-avatar.jpg"
           alt="Axel Estrada"
           width={180}
           height={180}

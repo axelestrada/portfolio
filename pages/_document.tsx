@@ -25,7 +25,7 @@ export default function Document() {
               "@type": "Person",
               name: "Axel Estrada",
               url: "https://axelestrada.ml",
-              image: "https://axelestrada.ml/assets/images/profile-avatar.svg",
+              image: "https://axelestrada.ml/assets/images/profile-avatar.jpg",
               sameAs: [
                 "https://facebook.com/axelestradadev",
                 "https://twitter.com/axelestradadev",
