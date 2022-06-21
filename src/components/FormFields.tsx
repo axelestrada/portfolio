@@ -1,11 +1,6 @@
-import {
-  FC,
-  Dispatch,
-  SetStateAction,
-  ChangeEvent,
-  ChangeEventHandler,
-  FocusEventHandler,
-} from "react";
+import { Tooltip } from "@nextui-org/react";
+
+import { FC, ChangeEventHandler, FocusEventHandler } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
@@ -36,10 +31,9 @@ export const Input: FC<{
     />
 
     {error && (
-      <div className="error">
-        <FontAwesomeIcon icon={faInfo} className="icon" />
-        <div className="tooltip">{error}</div>
-      </div>
+      <Tooltip content={error} color="error">
+        <FontAwesomeIcon icon={faInfo} className="error-icon" />
+      </Tooltip>
     )}
   </div>
 );
@@ -63,10 +57,9 @@ export const Textarea: FC<{
     ></textarea>
 
     {error && (
-      <div className="error">
-        <FontAwesomeIcon icon={faInfo} className="icon" />
-        <div className="tooltip">{error}</div>
-      </div>
+      <Tooltip content={error} color="error">
+        <FontAwesomeIcon icon={faInfo} className="error-icon" />
+      </Tooltip>
     )}
   </div>
 );
