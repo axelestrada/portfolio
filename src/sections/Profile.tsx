@@ -95,7 +95,19 @@ export default function Profile() {
           />
         </ul>
 
-        <Button title="Descargar CV" icon={faDownload} fullWidth />
+        <Button
+          title="Descargar CV"
+          icon={faDownload}
+          fullWidth
+          onClick={() => {
+            const a = document.createElement("a");
+            a.href = "https://axelestrada.ml/AxelEstrada-CV.pdf";
+            a.download = "AxelEstrada-CV.pdf";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+          }}
+        />
       </div>
     </section>
   );
