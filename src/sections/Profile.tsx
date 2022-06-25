@@ -77,9 +77,9 @@ export default function Profile() {
           <DetailsItem text="Tegucigalpa, Honduras" icon={faMapMarker} />
 
           <DetailsItem
-            text="hola@axelestrada.dev"
+            text="axele1524@gmail.com"
             icon={faEnvelope}
-            href="mailto:hola@axelestrada.dev"
+            href="mailto:axele1524@gmail.com"
           />
 
           <DetailsItem
