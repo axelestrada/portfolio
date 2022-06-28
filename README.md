@@ -13,8 +13,8 @@
 ![Hecho con Amor](./images/hecho-con-amor.svg) &nbsp;
 ![Construido con Typescript](./images/construido-con-typescript.svg) &nbsp;
 ![Codigo Abierto](./images/codigo-abierto.svg) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/axelestrada/portfolio?color=blue&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/axelestrada/portfolio?color=blue&logo=github&style=for-the-badge)
+<!--- ![GitHub Repo stars](https://img.shields.io/github/stars/axelestrada/portfolio?color=blue&logo=github&style=for-the-badge) &nbsp; -->
+<!--- ![GitHub forks](https://img.shields.io/github/forks/axelestrada/portfolio?color=blue&logo=github&style=for-the-badge) -->
 
 </center>
 
