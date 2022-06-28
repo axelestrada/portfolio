@@ -3,7 +3,7 @@
   <a href="https://axelestrada.ml/" target="_blank">axelestrada.ml</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Demo" src="./public/assets/images/index-preview.jpeg" />
 </div>
 
 <br/>
