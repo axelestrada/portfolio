@@ -1010,6 +1010,11 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
+"@emailjs/nodejs@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@emailjs/nodejs/-/nodejs-2.1.1.tgz#1ef86260bb56b0f453f850137b8ea2667f7b294f"
+  integrity sha512-K0V/XVoH3WC0wRYNZNt6+XJMyp1LE2ai8ITq5Ow/W8+TfZNXTCHTl1XiM8N0yNyA+K3/a2EMQK1fXOVCVvzwFA==
+
 "@eslint/eslintrc@^1.0.5":
   version "1.0.5"
   resolved "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-1.0.5.tgz"
