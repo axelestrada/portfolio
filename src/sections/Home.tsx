@@ -19,8 +19,8 @@ export default function Home() {
             Con sólidos conocimientos en tecnologías front-end y back-end como
             ReactJS, NodeJS, MySQL entre otros, además de habilidades básicas de
             diseño y optimización de SEO. Con todas las habilidades necesarias
-            para construir una aplicación o sitio web que sea funcional y fácil
-            de usar.
+            para llevar una aplicación o sitio web desde la
+            planificación hasta el despliegue final.
           </p>
         </div>
       </Article>

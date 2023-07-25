@@ -17,7 +17,7 @@ export const TimelineItem: FC<{
 
         <span className="date">{`${startDate} — ${finishDate}`}</span>
       </div>
-      <p>{description}</p>
+      <p className="description">{description}</p>
     </div>
   );
 };
