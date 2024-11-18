@@ -89,9 +89,9 @@ export default function Profile() {
           />
 
           <DetailsItem
-            text="infinitycss.com"
+            text="bitsfrontend.com"
             icon={faWorld}
-            href="https://infinitycss.com"
+            href="https://bitsfrontend.com"
           />
         </ul>
 
@@ -118,7 +118,7 @@ const SocialNetwork: FC<{ href: string; icon: IconProp }> = ({
   icon,
 }) => (
   <li className="social-network">
-    <a className="icon" href={href} target="_blank">
+    <a className="icon" href={href} target="_blank" rel="noreferrer">
       <FontAwesomeIcon icon={icon} />
     </a>
   </li>
@@ -133,7 +133,7 @@ const DetailsItem: FC<{ text: string; icon: IconProp; href?: string }> = ({
     <FontAwesomeIcon icon={icon} className="icon" />
 
     {href ? (
-      <a href={href} className="link" target="_blank">
+      <a href={href} className="link" target="_blank" rel="noreferrer">
         {text}
       </a>
     ) : (

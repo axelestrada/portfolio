@@ -10,17 +10,23 @@ export default function Home() {
       <Article className="about">
         <div className="description">
           <p>
-            Desarrollador web especializado en la construcción de aplicaciones y
-            sitios web con un domino excelente de los lenguajes HTML, CSS y
-            JavaScript.
+            ¡Hola! Soy un desarrollador frontend apasionado por crear interfaces
+            atractivas, funcionales y optimizadas. Mi enfoque principal es React
+            y React Native, con experiencia en tecnologías como TypeScript,
+            Next.js, Tailwind CSS y Sass.
           </p>
 
           <p>
-            Con sólidos conocimientos en tecnologías front-end y back-end como
-            ReactJS, NodeJS, MySQL entre otros, además de habilidades básicas de
-            diseño y optimización de SEO. Con todas las habilidades necesarias
-            para llevar una aplicación o sitio web desde la
-            planificación hasta el despliegue final.
+            Actualmente, estoy trabajando en proyectos que van desde
+            aplicaciones móviles para la gestión financiera hasta páginas web
+            promocionales. Disfruto transformando ideas en experiencias
+            digitales que hacen la vida más fácil para los usuarios.
+          </p>
+
+          <p>
+            Soy una persona curiosa y autodidacta, siempre buscando aprender
+            nuevas tecnologías y mejorar mis habilidades. Mi objetivo es
+            convertir problemas complejos en soluciones simples y elegantes.
           </p>
         </div>
       </Article>

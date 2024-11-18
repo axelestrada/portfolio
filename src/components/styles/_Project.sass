@@ -1,0 +1,57 @@
+@use "/src/styles/Mixins"
+
+.project
+  .image
+    margin-bottom: 0.5rem
+
+  .title
+    margin-bottom: .375rem
+    font-weight: 700
+
+  .description
+    padding-top: 0.5rem
+    color: $Fiord
+
+  .actions
+    display: flex
+    align-items: center
+    gap: 1rem
+    margin-top: 0.75rem
+
+    .button
+      position: relative
+      transition: .1s transform ease
+      cursor: pointer
+      width: max-content
+      border: none
+      outline: none
+      padding: 0
+      background: none
+      @include Mixins.shadow("primary")
+      background-color: $BlueRibbon
+      color: $White
+      padding: 0.75rem
+      border-radius: 1rem
+
+      &:hover
+        transform: scale(1.015)
+
+      &:active
+        transform: scale(1)
+
+    .link
+      color: $RegentGray
+
+      &:hover
+        color: $BlueRibbon
+
+  .technologies
+    display: flex
+    gap: .5rem
+    font-size: .875rem
+    color: $RegentGray
+    cursor: pointer
+
+    span
+      &:hover
+        color: $BlueRibbon

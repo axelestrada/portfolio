@@ -18,7 +18,7 @@ export default function Navbar() {
       <ul className="menu">
         <NavbarLink href="/" title="Inicio" />
         <NavbarLink href="/curriculum" title="Curriculum" />
-        <NavbarLink href="/portafolio" title="Portafolio" />
+        <NavbarLink href="/portafolio" title="Proyectos" />
         <NavbarLink href="/blog" title="Blog" />
         <NavbarLink href="/contacto" title="Contacto" />
       </ul>

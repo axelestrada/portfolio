@@ -7,7 +7,7 @@ const Dropdown: FC<{ placeholder?: string; options: string[] }> = ({
   options,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedOption, setSelectedOption] = useState("Todos");
 
   const toggling = () => setIsOpen(!isOpen);
 
