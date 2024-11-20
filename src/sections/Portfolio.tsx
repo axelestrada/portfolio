@@ -19,9 +19,7 @@ export default function Portfolio() {
   return (
     <Section title="Proyectos" className="portfolio">
       <div className="container">
-       
-          <Dropdown placeholder="Seleccionar categoría" options={categories} />
-        
+        <Dropdown placeholder="Seleccionar categoría" options={categories} />
 
         <div className="projects">
           <Project
@@ -35,8 +33,16 @@ export default function Portfolio() {
               "SQLite",
             ]}
           >
-            <Action title="Descargar" type="button" href="https://expo.dev/artifacts/eas/2VFw5kANJM2pppxaUJtH4X.apk" />
-            <Action title="Ver repositorio" type="link" href="https://github.com/axelestrada/monety" />
+            <Action
+              title="Descargar"
+              type="button"
+              href="https://expo.dev/artifacts/eas/2VFw5kANJM2pppxaUJtH4X.apk"
+            />
+            <Action
+              title="Ver repositorio"
+              type="link"
+              href="https://github.com/axelestrada/monety"
+            />
           </Project>
 
           <Project
