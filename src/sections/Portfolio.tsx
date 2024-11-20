@@ -19,9 +19,7 @@ export default function Portfolio() {
   return (
     <Section title="Proyectos" className="portfolio">
       <div className="container">
-       
-          <Dropdown placeholder="Seleccionar categoría" options={categories} />
-        
+        <Dropdown placeholder="Seleccionar categoría" options={categories} />
 
         <div className="projects">
           <Project

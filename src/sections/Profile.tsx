@@ -22,6 +22,7 @@ import {
 } from "../icons/customIcons";
 
 import Button from "../components/Button";
+import Link from "next/link";
 
 export default function Profile() {
   return (
@@ -95,19 +96,9 @@ export default function Profile() {
           />
         </ul>
 
-        <Button
-          title="Descargar CV"
-          icon={faDownload}
-          fullWidth
-          onClick={() => {
-            const a = document.createElement("a");
-            a.href = "https://axelestrada.ml/AxelEstrada-CV.pdf";
-            a.download = "AxelEstrada-CV.pdf";
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-          }}
-        />
+        <Link href="/portafolio" passHref>
+          <Button title="Ver Proyectos" fullWidth />
+        </Link>
       </div>
     </section>
   );
