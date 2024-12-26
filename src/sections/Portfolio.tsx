@@ -33,7 +33,7 @@ export default function Portfolio() {
               "SQLite",
             ]}
           >
-            <Action title="Descargar" type="button" href="https://expo.dev/artifacts/eas/6UenUDhBHR8sV6tgwvNaYN.apk" />
+            <Action title="Descargar" type="button" href="https://www.mediafire.com/file/xydpz6q8e68rhvr/Monety_0.1.0-alpha.apk/file" />
             <Action title="Ver repositorio" type="link" href="https://github.com/axelestrada/monety" />
           </Project>
 
